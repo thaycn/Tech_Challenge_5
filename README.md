@@ -9,7 +9,7 @@ Este repositório contém a solução completa para o Datathon da Associação P
 ## 📌 Links Principais
 * **🚀 Aplicativo Web (Streamlit):** https://techchallenge5-thaycnogueira.streamlit.app/
 * **📓 Notebook de Análise (Colab):** https://colab.research.google.com/drive/1NDHtak91hgbVn-C23n9XQ5AV5S38AuWf?usp=sharing
-* **📹 Pitch de Apresentação (Vídeo):** [Cole o link do seu vídeo no YouTube/Drive]
+* **📹 Pitch de Apresentação (Vídeo):** 
 * **📊 Apresentação de Negócios (Slides):** https://docs.google.com/presentation/d/14iOWaA6aGy1dMtc56Diia_5_un1XL3j4AsmuiF9nSC8/edit?usp=sharing
 
 ---
