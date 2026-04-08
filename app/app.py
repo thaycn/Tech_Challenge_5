@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import os
 
 # Configuração inicial da página
 st.set_page_config(page_title="Passos Mágicos - Alerta de Risco", page_icon="🔮", layout="centered")
@@ -12,11 +13,17 @@ Este aplicativo utiliza **Inteligência Artificial** para prever a probabilidade
 Insira os dados comportamentais e pedagógicos do aluno abaixo para realizar a análise preventiva.
 """)
 
-# Carregando o modelo de Machine Learning
+# ==========================================
+# CORREÇÃO DO CAMINHO DO ARQUIVO
+# ==========================================
 @st.cache_resource
 def load_model():
-    # O arquivo .pkl precisa estar na mesma pasta que este código
-    return joblib.load('modelo_passos_magicos.pkl')
+    # Descobre o caminho da pasta onde o app.py está rodando
+    diretorio_atual = os.path.dirname(os.path.abspath(__file__))
+    # Junta o caminho da pasta com o nome do arquivo do modelo
+    caminho_modelo = os.path.join(diretorio_atual, 'modelo_passos_magicos.pkl')
+    
+    return joblib.load(caminho_modelo)
 
 modelo = load_model()
 
@@ -56,4 +63,4 @@ if st.button("Analisar Risco", type="primary"):
         st.success("✅ **ALUNO FORA DE RISCO**")
         st.write(f"Probabilidade de entrar em defasagem: **{probabilidade[1] * 100:.1f}%**")
         st.info("Recomendação: O aluno apresenta um bom padrão comportamental. Continuar monitoramento padrão.")
-        st.balloons() # Animação de sucesso
+        st.balloons()
