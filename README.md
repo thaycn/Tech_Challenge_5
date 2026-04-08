@@ -7,10 +7,10 @@ Este repositório contém a solução completa para o Datathon da Associação P
 ---
 
 ## 📌 Links Principais
-* **🚀 Aplicativo Web (Streamlit):** [Cole o link do seu app aqui, ex: https://seu-app.streamlit.app]
-* **📓 Notebook de Análise (Colab):** [Cole o link do seu Google Colab ou deixe o arquivo .ipynb no repositório]
+* **🚀 Aplicativo Web (Streamlit):** https://techchallenge5-thaycnogueira.streamlit.app/
+* **📓 Notebook de Análise (Colab):** https://colab.research.google.com/drive/1NDHtak91hgbVn-C23n9XQ5AV5S38AuWf?usp=sharing
 * **📹 Pitch de Apresentação (Vídeo):** [Cole o link do seu vídeo no YouTube/Drive]
-* **📊 Apresentação de Negócios (Slides):** [Cole o link do seu Gamma App / Canva / PDF]
+* **📊 Apresentação de Negócios (Slides):** https://docs.google.com/presentation/d/14iOWaA6aGy1dMtc56Diia_5_un1XL3j4AsmuiF9nSC8/edit?usp=sharing
 
 ---
 
@@ -53,12 +53,15 @@ Caso queira rodar o aplicativo de Machine Learning na sua própria máquina:
    git clone [https://github.com/SeuUsuario/Tech_Challenge_5.git](https://github.com/SeuUsuario/Tech_Challenge_5.git)
 
 2. Acesse a pasta do projeto:
+```bash
 cd Tech_Challenge_5/app
 
 3. Instale as dependências:
+```bash
 pip install -r requirements.txt
 
-4. Execute o Streamlit:
+5. Execute o Streamlit:
+```bash
 streamlit run app.py
 
 
