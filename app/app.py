@@ -56,6 +56,9 @@ if st.button("Analisar Risco", type="primary"):
     st.header("Resultado da Análise")
     
     if previsao == 1:
+        # Toca uma notificação Pop-up que pula na tela para dar o "susto"
+        st.toast('Atenção! Risco Crítico Detectado!', icon='🚨')
+        
         st.error("🚨 **ALERTA: RISCO ACADÊMICO DETECTADO!**")
         st.write(f"Probabilidade de entrar em defasagem: **{probabilidade[1] * 100:.1f}%**")
         st.warning("Recomendação: Acionar a equipe pedagógica e psicológica para intervenção preventiva imediata (reforço escolar e acompanhamento próximo).")
