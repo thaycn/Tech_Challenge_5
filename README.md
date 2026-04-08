@@ -54,14 +54,17 @@ Caso queira rodar o aplicativo de Machine Learning na sua própria máquina:
 
 2. Acesse a pasta do projeto:
 ```bash
+
 cd Tech_Challenge_5/app
 
 3. Instale as dependências:
 ```bash
+
 pip install -r requirements.txt
 
 5. Execute o Streamlit:
 ```bash
+
 streamlit run app.py
 
 
