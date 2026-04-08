@@ -53,19 +53,15 @@ Caso queira rodar o aplicativo de Machine Learning na sua própria máquina:
    git clone [https://github.com/SeuUsuario/Tech_Challenge_5.git](https://github.com/SeuUsuario/Tech_Challenge_5.git)
 
 2. Acesse a pasta do projeto:
-```bash
-
-cd Tech_Challenge_5/app
+   ```bash
+   cd Tech_Challenge_5/app
 
 3. Instale as dependências:
-```bash
+   ```bash
+   pip install -r requirements.txt
 
-pip install -r requirements.txt
-
-5. Execute o Streamlit:
-```bash
-
-streamlit run app.py
-
+4. Execute o Streamlit:
+   ```bash
+   streamlit run app.py
 
 Desenvolvido com dedicação por [Tainara].
